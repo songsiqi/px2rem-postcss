@@ -23,7 +23,8 @@
         "istanbul": "^0.3.6",
         "coveralls": "^2.10.0",
         "mocha": "^2.1.0",
-        "cssmin": "~0.4.3"
+        "cssmin": "~0.4.3",
+        "autoprefixer-core": "~5.2.1"
     },
     "directories": {
         "test": "test"

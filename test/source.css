@@ -1,10 +1,12 @@
 /*整体样式*/
 body {
+    display: flex;
     background: #eee;
     color: #888; /* color is gray */
     border: 1px solid; /*no*/
     height: 20px; /* px */
     padding: 6px; /*px*/
+    opacity: 0.7;
 }
 .header, .footer span {
     width: 100%;

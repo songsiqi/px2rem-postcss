@@ -1,9 +1,11 @@
 /*整体样式*/
 body {
+    display: flex;
     background: #eee;
     color: #888;
     /* color is gray */
     border: 1px solid;
+    opacity: 0.7;
 }
 
 .header,
