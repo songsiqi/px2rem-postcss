@@ -1,0 +1,42 @@
+{
+    "name": "postcss-px2rem",
+    "description": "Postcss version of px2rem",
+    "version": "0.1.0",
+    "homepage": "https://github.com/songsiqi/px2rem-postcss",
+    "author": {
+        "name": "songsiqi",
+        "email": "songsiqi2006@126.com"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git@github.com:songsiqi/px2rem-postcss.git"
+    },
+    "engines": {
+        "node": ">= 0.10.0"
+    },
+    "dependencies": {
+        "postcss": "^4.1.11",
+        "px2rem": "~0.3.0",
+        "extend": "~2.0.0"
+    },
+    "devDependencies": {
+        "istanbul": "^0.3.6",
+        "coveralls": "^2.10.0",
+        "mocha": "^2.1.0",
+        "cssmin": "~0.4.3"
+    },
+    "directories": {
+        "test": "test"
+    },
+    "scripts": {
+        "test": "mocha",
+        "test-travis": "node node_modules/.bin/istanbul cover ./node_modules/.bin/_mocha --report lcovonly -- --reporter dot"
+    },
+    "main": "index.js",
+    "keywords": [
+        "px2rem",
+        "postcss-plugin"
+    ],
+    "readmeFilename": "README.md",
+    "license": "MIT"
+}
