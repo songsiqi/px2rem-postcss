@@ -38,6 +38,5 @@
         "px2rem",
         "postcss-plugin"
     ],
-    "readmeFilename": "README.md",
     "license": "MIT"
 }
