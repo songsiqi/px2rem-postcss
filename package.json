@@ -1,7 +1,7 @@
 {
     "name": "postcss-px2rem",
     "description": "Postcss version of px2rem",
-    "version": "0.1.1",
+    "version": "0.1.2",
     "homepage": "https://github.com/songsiqi/px2rem-postcss",
     "author": {
         "name": "songsiqi",
@@ -20,8 +20,6 @@
         "extend": "~2.0.0"
     },
     "devDependencies": {
-        "istanbul": "^0.3.6",
-        "coveralls": "^2.10.0",
         "mocha": "^2.1.0",
         "cssmin": "~0.4.3",
         "autoprefixer-core": "~5.2.1"
@@ -30,8 +28,7 @@
         "test": "test"
     },
     "scripts": {
-        "test": "mocha",
-        "test-travis": "node node_modules/.bin/istanbul cover ./node_modules/.bin/_mocha --report lcovonly -- --reporter dot"
+        "test": "mocha"
     },
     "main": "index.js",
     "keywords": [
