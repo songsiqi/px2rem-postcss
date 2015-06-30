@@ -7,14 +7,14 @@ This is a [postcss](https://www.npmjs.com/package/postcss) plugin of [px2rem](ht
 [![Test coverage][coveralls-image]][coveralls-url]
 [![Downloads][downloads-image]][downloads-url]
 
-[npm-image]: https://img.shields.io/npm/v/px2rem-postcss.svg?style=flat-square
-[npm-url]: https://npmjs.org/package/px2rem-postcss
+[npm-image]: https://img.shields.io/npm/v/postcss-px2rem.svg?style=flat-square
+[npm-url]: https://npmjs.org/package/postcss-px2rem
 [travis-image]: https://img.shields.io/travis/songsiqi/px2rem-postcss.svg?style=flat-square
 [travis-url]: https://travis-ci.org/songsiqi/px2rem-postcss
 [coveralls-image]: https://img.shields.io/coveralls/songsiqi/px2rem-postcss.svg?style=flat-square
 [coveralls-url]: https://coveralls.io/r/songsiqi/px2rem-postcss
-[downloads-image]: http://img.shields.io/npm/dm/px2rem-postcss.svg?style=flat-square
-[downloads-url]: https://npmjs.org/package/px2rem-postcss
+[downloads-image]: http://img.shields.io/npm/dm/postcss-px2rem.svg?style=flat-square
+[downloads-url]: https://npmjs.org/package/postcss-px2rem
 
 ## Usage
 
