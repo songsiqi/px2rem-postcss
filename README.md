@@ -97,7 +97,11 @@ module.exports = function(grunt) {
 
 ## Change Log
 
-### 0.1.2
+### 0.1.3
+
+* Fix root node extend bug.
+
+### 0.1.0
 
 * First release.
 
