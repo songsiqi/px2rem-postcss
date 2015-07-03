@@ -97,9 +97,9 @@ module.exports = function(grunt) {
 
 ## Change Log
 
-### 0.1.3
+### 0.1.4
 
-* Fix root node extend bug.
+* Fix bug while working with webpack loader.
 
 ### 0.1.0
 
