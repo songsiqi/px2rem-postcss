@@ -38,7 +38,7 @@ var postcss = require('gulp-postcss');
 var px2rem = require('postcss-px2rem');
 
 gulp.task('default', function() {
-    var processors = [px2rem({remUnit: 64})];
+    var processors = [px2rem({remUnit: 75})];
     return gulp.src('./src/*.css')
         .pipe(postcss(processors))
         .pipe(gulp.dest('./dest'));
@@ -64,7 +64,7 @@ module.exports = {
         ]
     },
     postcss: function() {
-        return [px2rem({remUnit: 64})];
+        return [px2rem({remUnit: 75})];
     }
 }
 ```
@@ -81,7 +81,7 @@ module.exports = function(grunt) {
         postcss: {
             options: {
                 processors: [
-                    px2rem({remUnit: 64})
+                    px2rem({remUnit: 75})
                 ]
             },
             dist: {
@@ -96,6 +96,12 @@ module.exports = function(grunt) {
 ```
 
 ## Change Log
+
+### 0.1.6
+
+* Deps: px2rem@~0.4.0
+    * The generated [data-dpr] rules follow the origin rule, no longer placed at the end of the whole style sheet.
+    * Optimize 0px, do not generate 3 [data-dpr] rules.
 
 ### 0.1.5
 
