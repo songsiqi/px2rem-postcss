@@ -6,7 +6,7 @@ var fs = require('fs');
 var px2rem = require('..');
 var cssmin = require('cssmin');
 var postcss = require('postcss');
-var autoprefixer = require('autoprefixer-core');
+var autoprefixer = require('autoprefixer');
 
 var opacity = function(css) {
     css.eachDecl(function(decl) {

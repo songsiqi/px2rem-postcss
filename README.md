@@ -97,6 +97,10 @@ module.exports = function(grunt) {
 
 ## Change Log
 
+### 0.2.0
+
+* Deps: postcss@^5.0.0
+
 ### 0.1.6
 
 * Deps: px2rem@~0.4.0
