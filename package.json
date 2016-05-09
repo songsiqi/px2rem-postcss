@@ -1,38 +1,28 @@
 {
-    "name": "postcss-px2rem",
-    "description": "Postcss version of px2rem",
-    "version": "0.2.0",
-    "homepage": "https://github.com/songsiqi/px2rem-postcss",
-    "author": {
-        "name": "songsiqi",
-        "email": "songsiqi2006@126.com"
-    },
-    "repository": {
-        "type": "git",
-        "url": "git@github.com:songsiqi/px2rem-postcss.git"
-    },
-    "engines": {
-        "node": ">= 0.10.0"
-    },
-    "dependencies": {
-        "postcss": "^5.0.0",
-        "px2rem": "~0.4.0"
-    },
-    "devDependencies": {
-        "mocha": "^2.1.0",
-        "cssmin": "~0.4.3",
-        "autoprefixer": "~6.1.0"
-    },
-    "directories": {
-        "test": "test"
-    },
-    "scripts": {
-        "test": "mocha"
-    },
-    "main": "index.js",
-    "keywords": [
-        "px2rem",
-        "postcss-plugin"
-    ],
-    "license": "MIT"
+  "name": "postcss-px2rem",
+  "description": "Postcss version of px2rem",
+  "version": "0.2.0",
+  "homepage": "https://github.com/songsiqi/px2rem-postcss",
+  "author": "songsiqi <songsiqi2006@126.com>",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:songsiqi/px2rem-postcss.git"
+  },
+  "dependencies": {
+    "postcss": "^5.0.0",
+    "px2rem": "~0.5.0"
+  },
+  "devDependencies": {
+    "mocha": "^2.1.0",
+    "autoprefixer": "^6.1.0"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "main": "index.js",
+  "keywords": [
+    "px2rem",
+    "postcss-plugin"
+  ],
+  "license": "MIT"
 }
