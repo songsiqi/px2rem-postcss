@@ -96,7 +96,12 @@ module.exports = function(grunt) {
 ```
 
 ## Change Log
-
+### 0.3.1
+* option: {
+  exclude: [
+    filePath
+  ]
+}
 ### 0.3.0
 
 * Deps: px2rem@~0.5.0
