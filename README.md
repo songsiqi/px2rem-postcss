@@ -97,7 +97,7 @@ module.exports = function(grunt) {
 
 ## Change Log
 ### 0.3.1
-option: {
+* option: {
   exclude: [
     filePath
   ]
