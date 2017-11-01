@@ -39,4 +39,24 @@ describe('postcss-px2rem', function () {
     var expectedText = fs.readFileSync(path.join(__dirname, 'dest.multiple.css'), {encoding: 'utf8'});
     assert.equal(outputText, expectedText);
   });
+  
+  it('should disable output rem ', function () {
+    var srcPath = path.join(__dirname, 'source.disabled.css');
+    var srcText = fs.readFileSync(srcPath, {encoding: 'utf8'});
+    var outputText = postcss().use(px2rem({remUnit: 75})).process(srcText).css;
+    var expectedText = fs.readFileSync(path.join(__dirname, 'dest.basic.disabled.css'), {encoding: 'utf8'});
+    assert.equal(outputText, expectedText);
+  });
+  
+  it('should disable output rem and get along well with other plugins', function () {
+    var srcPath = path.join(__dirname, 'source.disabled.css');
+    var srcText = fs.readFileSync(srcPath, {encoding: 'utf8'});
+    var outputText = postcss()
+      .use(autoprefixer({browsers: ['iOS >= 6', 'Android >= 2.3']}))
+      .use(px2rem({remUnit: 75}))
+      .use(opacity)
+      .process(srcText).css;
+    var expectedText = fs.readFileSync(path.join(__dirname, 'dest.multiple.disabled.css'), {encoding: 'utf8'});
+    assert.equal(outputText, expectedText);
+  });
 });
