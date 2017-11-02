@@ -39,4 +39,21 @@ describe('postcss-px2rem', function () {
     var expectedText = fs.readFileSync(path.join(__dirname, 'dest.multiple.css'), {encoding: 'utf8'});
     assert.equal(outputText, expectedText);
   });
+  
+  it('should disable output rem in top position', function () {
+    var srcPath = path.join(__dirname, 'source.disabled.css');
+    var srcText = fs.readFileSync(srcPath, {encoding: 'utf8'});
+    var outputText = postcss().use(px2rem({remUnit: 75})).process(srcText).css;
+    var expectedText = fs.readFileSync(path.join(__dirname, 'dest.basic.disabled.css'), {encoding: 'utf8'});
+    assert.equal(outputText, expectedText);
+  });
+  
+  it('should disable output rem in middle position', function () {
+    var srcPath = path.join(__dirname, 'source.middle.disabled.css');
+    var srcText = fs.readFileSync(srcPath, {encoding: 'utf8'});
+    var outputText = postcss().use(px2rem({remUnit: 75})).process(srcText).css;
+    console.log(outputText)
+    var expectedText = fs.readFileSync(path.join(__dirname, 'dest.middle.disabled.css'), {encoding: 'utf8'});
+    assert.equal(outputText, expectedText);
+  });
 });
