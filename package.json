@@ -10,7 +10,7 @@
   },
   "dependencies": {
     "postcss": "^5.0.0",
-    "px2rem": "~0.5.0"
+    "px2rem-1px": "~0.5.0"
   },
   "devDependencies": {
     "mocha": "^2.1.0",
